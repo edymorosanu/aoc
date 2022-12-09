@@ -76,10 +76,8 @@ def get_tree(file):
         content = "".join(f).split("$ ")
         cur_dir = Dir("/")
         for section in content[1:]:
-            # print(cur_dir.name)
             lines = section.split("\n")
             command = lines[0].split(" ")
-            # print(command)
             if command[0] == "cd":
                 dir_name = command[1]
                 if dir_name != "..":
