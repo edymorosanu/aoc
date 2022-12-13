@@ -1,6 +1,4 @@
 import os
-import sys
-import functools
 
 curr_dir = os.path.dirname(os.path.realpath(__file__))
 input_file = f"{curr_dir}/07input.txt"
